@@ -19,9 +19,11 @@ const Nav = ({handleClick}) => {
                 </MenuItemGroup>
                 <MenuItemGroup key="g2" title="Librarries">
                     <SubMenu key="sub2" title="Images">
-                    <Menu.Item key="7" to='/react-carousel'>React carousel</Menu.Item>
-                    <Menu.Item key="7" to='/react-images'>React Images</Menu.Item>
-
+                      <Menu.Item key="7" to='/react-carousel'>React carousel</Menu.Item>
+                      <Menu.Item key="8" to='/react-images'>React Images</Menu.Item>
+                    </SubMenu>
+                    <SubMenu key="sub3" title="Drag and Drop">
+                      <Menu.Item key="9" to='/react-sortable'>React Sortable</Menu.Item>
                     </SubMenu>
 
                   <Menu.Item key="4">Option 4</Menu.Item>

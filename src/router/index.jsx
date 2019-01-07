@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { Layout } from '../commons'
 import { createBrowserHistory } from 'history';
-import { Home, About, ReactCarousel, ReactImages } from '../pages'
+import { Home, About, ReactCarousel, ReactImages, ReactSortable } from '../pages'
 const history  = createBrowserHistory()
 export class Root extends Component {
 
@@ -17,6 +17,7 @@ export class Root extends Component {
             <Route exact path='/about' component={About}/>
             <Route exact path='/react-carousel' component={ReactCarousel}/>
             <Route exact path='/react-images' component={ReactImages}/>
+            <Route exact path='/react-sortable' component={ReactSortable}/>
           </header>
         </Layout>
       </Switch>

@@ -53,19 +53,23 @@ export class RactImages extends Component {
     return (
         <div > 
           <div className='text-container'>
-          <h4>A simple, responsive lightbox component for displaying an array of images.</h4>
+            <h4>A simple, responsive lightbox component for displaying an array of images.</h4>
+            <p>This librarry help you to have image lightbox for your images. </p>
+            <p>
+              You need to render your gallery first then set your click handler for each image to open lightbox for image you click <br/></p>
+              <b>{"<img src={image.src} style={{width: '100%'}} onClick={e =>this.openLightbox(i, e)}/>"}</b>
           </div>
           <div className='row'>
           <div className='column'>
           {
         
-            images.map((image, i) => i % 2 === 0 && <img src={image.src} style={{width: '100%'}} onClick={e =>this.openLightbox(i, e)}/> )
+            images.map((image, i) => i % 2 === 0 && <img key={i} src={image.src} style={{width: '100%'}} onClick={e =>this.openLightbox(i, e)}/> )
           }
           </div>
           <div className='column'>
           {
         
-            images.map((image, i) => i % 2 !==0 && <img src={image.src} style={{width: '100%'}} onClick={e =>this.openLightbox(i, e)}/> )
+            images.map((image, i) => i % 2 !==0 && <img key={i} src={image.src} style={{width: '100%'}} onClick={e =>this.openLightbox(i, e)}/> )
           }
           </div>
           </div>
